@@ -1,141 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CES Trainer - Project Details</title>
-  <!-- MDB CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="../../css/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+  <!-- Метод 1: META Refresh (работает всегда, даже если JavaScript отключен) -->
+  <meta http-equiv="refresh" content="0; url=../ces-trainer/index.html">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0 20px;
+      text-align: center;
+      background-color: #f5f5f5;
+    }
+    
+    .redirect-container {
+      max-width: 600px;
+      padding: 40px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      color: #34495e;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+    
+    a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+    
+    .loader {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="../../index.html">My Portfolio</a>
-      <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="../../index.html#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="../../index.html#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="../../index.html#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Project Header -->
-  <header class="text-center py-5 bg-primary text-white">
-    <div class="container">
-      <h1 class="display-4">CES Trainer</h1>
-      <p class="lead">Master the CES exam with ease! Comprehensive questions, favorite tracking, and user-friendly tools for success.</p>
-      <a href="https://apps.apple.com/app/ces-trainer/id6737857414">
-        <img
-          src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
-          alt="Download on the App Store"
-          style="width: 200px;"
-        />
-      </a>
-      
-    </div>
-  </header>
-
-  <!-- Project Details Section -->
-  <section class="py-5">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- App Icon -->
-        <div class="col-md-4 text-center">
-          <img src="images/app-icon.png" alt="App Icon" class="img-fluid rounded shadow" />
-        </div>
-        <!-- App Description -->
-        <div class="col-md-8">
-          <h3>About the App</h3>
-          <p>
-            The CES Trainer app is your ultimate companion for mastering the CES exam. With a focused and practical approach, CES Trainer makes studying straightforward, efficient, and effective.
-          </p>
-          <ul>
-            <li><strong>Comprehensive Question Bank: </strong>Access questions that cover all key topics, ensuring you're well-prepared for every part of the CES exam.</li>
-            <li><strong>Favorite Questions:</strong> Mark challenging questions as favorites to revisit and refine your understanding of difficult topics.</li>
-            <li><strong>Practice & Exam Modes:</strong> Study at your own pace in practice mode, or simulate real exam conditions.</li>
-            <li><strong>Quick Navigation:</strong> Enjoy a clean, user-friendly interface that makes it easy to browse and study efficiently.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Screenshots Section -->
-  <section id="screenshots" class="py-5 bg-light">
-    <div class="container">
-      <h3 class="text-center mb-4">Screenshots</h3>
-      <div class="d-flex overflow-auto py-2 gap-3">
-        <img src="images/screenshot1.png" alt="Screenshot 1" class="img-fluid rounded shadow-sm" onclick="showFullScreen('images/screenshot1.png')" />
-        <img src="images/screenshot2.png" alt="Screenshot 2" class="img-fluid rounded shadow-sm" onclick="showFullScreen('images/screenshot2.png')" />
-        <img src="images/screenshot3.png" alt="Screenshot 3" class="img-fluid rounded shadow-sm" onclick="showFullScreen('images/screenshot3.png')" />
-        <img src="images/screenshot4.png" alt="Screenshot 4" class="img-fluid rounded shadow-sm" onclick="showFullScreen('images/screenshot4.png')" />
-        <img src="images/screenshot5.png" alt="Screenshot 5" class="img-fluid rounded shadow-sm" onclick="showFullScreen('images/screenshot5.png')" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Fullscreen Overlay -->
-  <div id="fullscreenOverlay" class="fullscreen-overlay" onclick="closeFullScreen()">
-    <img id="fullscreenImage" class="fullscreen-image" src="" alt="Fullscreen Screenshot" />
+  <div class="redirect-container">
+    <h1>Page Has Moved</h1>
+    <div class="loader"></div>
+    <p>This page has been relocated to a new address. You will be redirected automatically in a moment.</p>
+    <p>If you are not redirected automatically, please <a href="../ces-trainer/index.html">click here</a> to go to the new page.</p>
   </div>
 
-    <!-- Privacy Policy Section -->
-    <section class="py-5">
-      <div class="container text-center">
-        <h3>Privacy Policy</h3>
-        <p>Learn how we protect your data and respect your privacy.</p>
-        <a href="privacy.html" class="btn btn-primary">Read Privacy Policy</a>
-      </div>
-    </section>
-    
-  <!-- Contact Section -->
-  <section class="py-5">
-    <div class="container">
-      <h3 class="text-center mb-4">Contact Support</h3>
-      <div class="card shadow-sm mx-auto" style="max-width: 600px;">
-        <div class="card-body text-center">
-          <p class="text-muted">
-            If you have any questions or feedback about CES Trainer, feel free to contact us:
-          </p>
-          <p class="fs-5">
-            <strong>Email:</strong>
-            <a href="mailto:ev.kryzhanivskyi@gmail.com" class="text-primary">ev.kryzhanivskyi@gmail.com</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- Footer -->
-  <footer class="text-center bg-dark text-white py-4">
-    <p>© 2024 CES Trainer. All rights reserved.</p>
-    <a href="../../index.html" class="text-white">Back to Home</a>
-  </footer>
-
-  <!-- MDB JS -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+  <!-- Метод 2: JavaScript редирект (выполняется быстрее, чем META refresh) -->
   <script>
-    function showFullScreen(imageSrc) {
-      document.getElementById("fullscreenImage").src = imageSrc;
-      document.getElementById("fullscreenOverlay").style.display = "flex";
-    }
-
-    function closeFullScreen() {
-      document.getElementById("fullscreenOverlay").style.display = "none";
-    }
+    // Немедленно перенаправляем на новый URL
+    window.location.href = "../ces-trainer/index.html";
   </script>
 </body>
 </html>

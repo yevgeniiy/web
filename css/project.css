@@ -1,0 +1,331 @@
+/* Project CSS - дополнительные стили для страниц проектов */
+
+/* Переопределяем важные переменные на случай, если они не импортируются из style.css */
+:root {
+    --primary: #2c3e50;
+    --secondary: #34495e;
+    --accent: #3498db;
+    --light: #f8f9fa;
+    --gray: #95a5a6;
+    --dark: #1a202c;
+    --text: #2d3748;
+    --border: #e2e8f0;
+  }
+  
+  /* Заголовок проекта */
+  #project-header {
+    padding: 150px 0 80px;
+    background-color: var(--light);
+    border-bottom: 1px solid var(--border);
+  }
+  
+  /* Базовые стили для секций */
+  section {
+    padding: 100px 0;
+  }
+  
+  section:not(:last-child) {
+    border-bottom: 1px solid var(--border);
+  }
+  
+  section.bg-light {
+    background-color: var(--light);
+  }
+  
+  /* Иконка приложения */
+  .app-icon {
+    width: 180px;
+    height: 180px;
+    border-radius: 22%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border);
+    object-fit: cover;
+    background-color: white;
+  }
+  
+  /* Бейдж App Store */
+  .store-badge {
+    display: inline-block;
+    margin-top: 1.5rem;
+  }
+  
+  .store-badge img {
+    height: 40px;
+  }
+  
+  /* Заголовки и тексты */
+  .title-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .section-title h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+  }
+  
+  /* Фичи и элементы списка */
+  .feature-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .feature-item:last-child {
+    border-bottom: none;
+  }
+  
+  .feature-item h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--dark);
+  }
+  
+  /* Галерея скриншотов */
+  .screenshots-gallery {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px 0;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+  
+  .screenshots-gallery::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .screenshots-gallery::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  .screenshots-gallery::-webkit-scrollbar-thumb {
+    background-color: var(--gray);
+    border-radius: 4px;
+  }
+  
+  .screenshot-item {
+    flex: 0 0 auto;
+    width: 250px;
+    max-width: 90vw;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    background-color: white;
+  }
+  
+  .screenshot-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .screenshot-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Полноэкранный просмотр */
+  .fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fullscreen-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+  }
+  
+  .close-button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Теги технологий */
+  .tech-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    background-color: #f1f5f9;
+    border-radius: 2px;
+    color: var(--secondary);
+  }
+  
+  /* Отзывы пользователей */
+  .testimonial-item {
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  }
+  
+  .testimonial-text {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: var(--text);
+  }
+  
+  .testimonial-author {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    text-align: right;
+    color: var(--gray);
+  }
+  
+  .rating {
+    color: #f1c40f;
+    margin-bottom: 15px;
+  }
+  
+  /* Контактная форма */
+  .contact-info {
+    margin: 1.5rem 0;
+  }
+  
+  .contact-info a {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.25rem;
+    color: var(--accent);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: var(--primary);
+  }
+  
+  /* Кнопки */
+  .btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 2px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+  }
+  
+  .btn-outline {
+    color: var(--primary);
+    background-color: transparent;
+    border: 1px solid var(--primary);
+  }
+  
+  .btn-outline:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+  
+  /* Анимация */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    #project-header {
+      padding: 120px 0 60px;
+      text-align: center;
+    }
+    
+    .app-icon {
+      margin: 2rem auto 0;
+      width: 150px;
+      height: 150px;
+    }
+    
+    .section-title h2 {
+      font-size: 2rem;
+    }
+    
+    .feature-item {
+      padding-bottom: 25px;
+    }
+  }
+  
+  /* Футер */
+  footer {
+    padding: 3rem 0;
+    background-color: white;
+    border-top: 1px solid var(--border);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: var(--gray);
+  }
+  
+  .footer-link {
+    color: var(--gray);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-link:hover {
+    color: var(--accent);
+  }

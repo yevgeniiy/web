@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Name | Yevgenii Kryzhanivskyi</title>
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  
+  <!-- MDB CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../../css/style.css">
+  
+  <!-- Project Page Specific Styles -->
+  <link rel="stylesheet" href="../../css/project.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../../index.html">YK</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Project Header -->
+  <header id="project-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8 header-content fade-in">
+          <span class="title-label">iOS Application</span>
+          <h1>Project Name</h1>
+          <p class="lead">
+            Project description goes here. This should be a concise summary of what the application does and who it's for.
+          </p>
+          <!-- App Store Link -->
+          <a href="#" class="store-badge">
+            <img src="../../images/app-store-badge.svg" alt="Download on the App Store">
+          </a>
+        </div>
+        <div class="col-lg-4 text-center fade-in" style="transition-delay: 0.2s;">
+          <!-- App Icon -->
+          <img
+            src="images/app-icon.png"
+            alt="App Icon"
+            class="app-icon"
+          />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Overview Section -->
+  <section id="overview">
+    <div class="container">
+      <div class="section-title fade-in">
+        <span class="title-label">Overview</span>
+        <h2>About the App</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 fade-in">
+          <p>
+            Detailed description about the application goes here. Explain the problem the app solves, its target audience, and what makes it unique.
+          </p>
+          <p>
+            You can add multiple paragraphs to provide a comprehensive overview of your application.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="bg-light">
+    <div class="container">
+      <div class="section-title fade-in">
+        <span class="title-label">Capabilities</span>
+        <h2>Key Features</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 fade-in">
+          <div class="features-list">
+            <div class="feature-item">
+              <h3>Feature Title</h3>
+              <p>Feature description goes here. Explain how it benefits users.</p>
+            </div>
+            
+            <div class="feature-item">
+              <h3>Feature Title</h3>
+              <p>Feature description goes here. Explain how it benefits users.</p>
+            </div>
+            
+            <div class="feature-item">
+              <h3>Feature Title</h3>
+              <p>Feature description goes here. Explain how it benefits users.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots Section -->
+  <section id="screenshots">
+    <div class="container">
+      <div class="section-title fade-in">
+        <span class="title-label">Visual Tour</span>
+        <h2>Screenshots</h2>
+      </div>
+      <div class="screenshots-gallery fade-in">
+        <!-- Screenshot items will be placed here -->
+        <div class="screenshot-item" onclick="showFullScreen('images/screenshot1.jpg')">
+          <img src="images/screenshot1.jpg" alt="Screenshot 1" class="img-fluid">
+        </div>
+        <div class="screenshot-item" onclick="showFullScreen('images/screenshot2.jpg')">
+          <img src="images/screenshot2.jpg" alt="Screenshot 2" class="img-fluid">
+        </div>
+        <div class="screenshot-item" onclick="showFullScreen('images/screenshot3.jpg')">
+          <img src="images/screenshot3.jpg" alt="Screenshot 3" class="img-fluid">
+        </div>
+        <!-- Add more screenshots as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Section -->
+  <section id="technology" class="bg-light">
+    <div class="container">
+      <div class="section-title fade-in">
+        <span class="title-label">Development</span>
+        <h2>Technologies Used</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 fade-in">
+          <div class="tech-container">
+            <span class="tech-tag">Swift</span>
+            <span class="tech-tag">SwiftUI</span>
+            <span class="tech-tag">Core Data</span>
+            <span class="tech-tag">CloudKit</span>
+            <!-- Add more technologies as needed -->
+          </div>
+          <p class="tech-description">
+            A brief explanation of the technologies and why they were chosen for this project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="project-contact">
+    <div class="container">
+      <div class="section-title fade-in">
+        <span class="title-label">Support</span>
+        <h2>Get in Touch</h2>
+      </div>
+      <div class="contact-card fade-in">
+        <p>
+          If you have any questions, feedback, or need support for this application, please feel free to reach out:
+        </p>
+        <div class="contact-info">
+          <a href="mailto:ev.kryzhanivskyi@gmail.com">ev.kryzhanivskyi@gmail.com</a>
+        </div>
+        
+        <div class="mt-4">
+          <a href="../../index.html#projects" class="btn btn-outline">
+            <i class="fas fa-arrow-left me-2"></i> Back to Projects
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fullscreen Overlay for Screenshots -->
+  <div id="fullscreenOverlay" class="fullscreen-overlay" onclick="closeFullScreen()">
+    <div class="close-button" onclick="closeFullScreen()">
+      <i class="fas fa-times"></i>
+    </div>
+    <img id="fullscreenImage" class="fullscreen-image" src="" alt="Fullscreen Screenshot">
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="container">
+      <p>© 2024 Yevgenii Kryzhanivskyi • iOS Developer</p>
+      <a href="../../index.html" class="footer-link">Back to Home</a>
+    </div>
+  </footer>
+
+  <!-- MDB JS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="../../js/main.js"></script>
+  <script src="../../js/project.js"></script>
+</body>
+</html>
